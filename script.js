@@ -90,6 +90,19 @@
   setTimeout(runTerminal, 600);
 })();
 
+// Nav scroll behavior
+(function () {
+  const navbar = document.getElementById('navbar');
+  if (!navbar) return;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }, { passive: true });
+})();
+
 // Scroll reveal animation
 (function () {
   const observer = new IntersectionObserver(
@@ -109,7 +122,7 @@
     { threshold: 0.1 }
   );
 
-  document.querySelectorAll('.project-card, .skill-group, .hire-card').forEach(el => {
+  document.querySelectorAll('.project-card, .skill-group, .hire-card, .exp-item').forEach(el => {
     observer.observe(el);
   });
 })();

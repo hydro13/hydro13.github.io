@@ -11,6 +11,21 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#hero">hydro13</a>
+      <div class="nav-links">
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#hire">Hire</a>
+        <a href="mailto:r.waslander@gmail.com">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- ==================== HERO ==================== -->
   <section id="hero">
     <div class="hero-content">
@@ -18,6 +33,26 @@
       <h1>Robin Waslander</h1>
       <h2>AI Systems Architect &amp; Builder</h2>
       <p class="tagline">I build things that should not exist yet.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-number">35</span>
+          <span class="stat-label">years in IT</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">projects shipped</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">811K</span>
+          <span class="stat-label">threats blocked</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-number">250K</span>
+          <span class="stat-label">lines TypeScript</span>
+        </div>
+      </div>
+
       <div class="terminal">
         <div class="terminal-header">
           <span class="terminal-dot red"></span>
@@ -33,6 +68,34 @@
     </div>
   </section>
 
+  <!-- ==================== TICKER ==================== -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-dot">●</span>
+      <span class="ticker-item">Tandem Browser — 180+ threats blocked today</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">Kanbu — 154 MCP tools live</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">SDR — ADS-B tracking aircraft above BRU</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">OpenClaw contributor — PR merged Feb 2026</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">Available for freelance contracts</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-dot">●</span>
+      <span class="ticker-item">Tandem Browser — 180+ threats blocked today</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">Kanbu — 154 MCP tools live</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">SDR — ADS-B tracking aircraft above BRU</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">OpenClaw contributor — PR merged Feb 2026</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-item">Available for freelance contracts</span>
+      <span class="ticker-sep">·</span>
+    </div>
+  </div>
+
   <!-- ==================== PROJECTS ==================== -->
   <section id="projects">
     <h2 class="section-title">What I've Built</h2>
@@ -41,7 +104,7 @@
 
       <article class="project-card">
         <div class="card-header">
-          <span class="badge open-source">OPEN SOURCE</span>
+          <span class="badge active-sprint">ACTIVE SPRINT</span>
         </div>
         <h3>Kanbu</h3>
         <p class="project-tagline">Enterprise AI Project Management</p>
@@ -56,7 +119,7 @@
 
       <article class="project-card">
         <div class="card-header">
-          <span class="badge in-dev">IN DEVELOPMENT</span>
+          <span class="badge flagship">FLAGSHIP</span>
         </div>
         <h3>Tandem Browser</h3>
         <p class="project-tagline">AI-Human Symbiotic Browser</p>
@@ -177,6 +240,90 @@
           <li>FalkorDB</li>
           <li>ChromaDB</li>
         </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <p class="section-subtitle">The person behind the projects.</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm Robin — AI systems architect based in Herent, Belgium. 35 years in IT. Started as a sysadmin, ran a VR company, now building autonomous AI systems solo out of a home office.</p>
+        <p>I think in systems. Not in tasks or sprints — in the way pieces connect and where they break. That instinct comes from 35 years of keeping production infrastructure alive for banks, hospitals, and telecoms.</p>
+        <p>The projects on this page exist because nobody else made them. Tandem because AI needs a browser that doesn't leak data. Kanbu because PM tools weren't built for AI workflows. TotalRecall because AI that forgets everything is just expensive autocomplete.</p>
+      </div>
+      <div class="about-aside">
+        <div class="about-aside-item">
+          <span class="aside-label">Location</span>
+          <span class="aside-value">Herent, Belgium</span>
+        </div>
+        <div class="about-aside-item">
+          <span class="aside-label">Availability</span>
+          <span class="aside-value available">Open to contracts</span>
+        </div>
+        <div class="about-aside-item">
+          <span class="aside-label">Entity</span>
+          <span class="aside-value">Mblock BV (B2B)</span>
+        </div>
+        <div class="about-aside-item">
+          <span class="aside-label">Languages</span>
+          <span class="aside-value">Dutch · English</span>
+        </div>
+        <div class="about-links">
+          <a href="https://linkedin.com/in/robinwaslander" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/hydro13" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://x.com/Robin_waslander" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <p class="section-subtitle">Where the 35 years come from.</p>
+    <div class="experience-list">
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-date">2025 — Present</span>
+        </div>
+        <div class="exp-right">
+          <h3>AI Architect &amp; Builder — Mblock BV</h3>
+          <p>Building Tandem, Kanbu, and autonomous AI systems. Solo architecture, solo development, solo deployment.</p>
+          <div class="exp-tags">
+            <span>TypeScript</span><span>AI/ML</span><span>Electron</span><span>MCP</span><span>Claude API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-date">2017 — 2022</span>
+        </div>
+        <div class="exp-right">
+          <h3>Co-founder &amp; CTO — Meta3D BV</h3>
+          <p>Built a virtual reality company from zero. Software architecture, hardware procurement, client delivery. Ran until 2022.</p>
+          <div class="exp-tags">
+            <span>VR / AR</span><span>Unity</span><span>C#</span><span>Hardware</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-left">
+          <span class="exp-date">1990 — 2017</span>
+        </div>
+        <div class="exp-right">
+          <h3>Senior Systems Engineer — Enterprise IT</h3>
+          <p>27 years keeping production infrastructure alive. Clients: Postbank, ING, Deventer Ziekenhuis, KPN, Stichting Talant. MCSE certified 2001.</p>
+          <div class="exp-tags">
+            <span>MCSE</span><span>Windows Server</span><span>Security</span><span>Active Directory</span><span>Network</span>
+          </div>
+        </div>
       </div>
 
     </div>
